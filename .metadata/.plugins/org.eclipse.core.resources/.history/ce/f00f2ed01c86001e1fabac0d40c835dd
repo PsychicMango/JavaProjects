@@ -1,0 +1,18 @@
+package curso_programacao1;
+
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int y = 32;
+		double x = 10.343;
+		
+		Locale.setDefault(Locale.US);
+		
+		System.out.println("VAI TOMA NO CU PIRANHAAAAAAAAAAAAA");
+		System.out.println("BOM DIA CARAIOOOOOO");
+		System.out.println(y);
+	}
+
+}

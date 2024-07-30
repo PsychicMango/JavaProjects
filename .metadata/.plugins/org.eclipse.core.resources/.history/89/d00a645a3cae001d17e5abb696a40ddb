@@ -1,0 +1,17 @@
+package curso_programacao;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int idade;
+		double altura, peso, km, distancia;
+		idade = 20;
+		altura = 1.90;
+		
+		
+		
+		System.out.print("Olá Mundo!");
+
+	}
+
+}

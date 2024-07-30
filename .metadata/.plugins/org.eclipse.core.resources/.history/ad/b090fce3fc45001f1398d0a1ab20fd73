@@ -1,0 +1,33 @@
+package Programa;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner leitor =  new Scanner(System.in);
+		System.out.println("Quantos numeros ira digitar?");
+		int n = leitor.nextInt();
+		if(n > 10 || n < 0) {
+			do {
+				System.out.print("Informe um numero valido: ");
+				n = leitor.nextInt();
+				
+			}while(n > 10 || n < 0);
+		}
+		int[] vetor = new int[n];
+		for(int i = 0; i < vetor.length; i++) {
+			System.out.print("Digite um numero: ");
+			vetor[i] = leitor.nextInt();
+		}
+		
+		for(int i = 0; i < vetor.length; i++) {
+			if(vetor[i] < 0)
+				System.out.printf("NUMEROS NEGATIVOS: %d",vetor[i]);
+		
+		}
+		
+	}
+}

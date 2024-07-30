@@ -1,0 +1,54 @@
+package Atividades;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Moudulo1 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner leitor = new Scanner(System.in);
+		/*
+		//Exercício 1
+		int num1, num2;
+		
+		num1 = leitor.nextInt();
+		num2 = leitor.nextInt();
+		
+		System.out.printf("SOMA = %d", num1+num2 );
+	*/
+		//Exercicio 2
+		/*
+		double area, raio;
+		raio = leitor.nextDouble();
+		area = Math.round(Math.PI * Math.pow(raio, 2));
+		
+		System.out.printf("A = %f", area);
+		*/
+		
+		//Exercicio 3
+		/*
+		int A, B, C, D;
+		int Diferenca;
+		
+		A = leitor.nextInt();
+		B = leitor.nextInt();
+		C = leitor.nextInt();
+		D = leitor.nextInt();
+		Diferenca = (A * B - C * D);
+		System.out.printf("DIFERENCA = %d", Diferenca);
+		*/
+		
+		//Exercicio 4
+		int id, horas;
+		double valorHora;
+		
+		id = leitor.nextInt();
+		horas = leitor.nextInt();
+		valorHora = leitor.nextDouble();
+		
+		System.out.println("Number = " + id);
+		System.out.printf("SALARY = %d",(double)valorHora * horas);
+	}
+
+}

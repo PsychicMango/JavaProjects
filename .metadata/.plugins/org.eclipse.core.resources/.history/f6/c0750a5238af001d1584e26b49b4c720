@@ -1,0 +1,128 @@
+package curso_programacao;
+
+import java.util.Locale;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//Exercício2
+		
+		double raio, Resultado;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Informe os dados a serem calculados a área de um circulo: ");
+		raio = sc.nextDouble();
+		System.out.println("A sua circunferencia é: ");
+		Resultado = Math.PI * Math.pow(raio, 2.0);
+		System.out.println(Resultado);
+		/*
+		//Exercício 1
+		int A, B, Soma;
+		Scanner sc = new Scanner(System.in);
+		System.out.printf("Informe os numeros para serem somados\n");
+		System.out.printf("Primeiro numero: \n");
+		A = sc.nextInt();
+		System.out.printf("Segundo numero:\n ");
+		B = sc.nextInt();
+		sc.close();
+		Soma = A + B;
+		System.out.printf("A soma dos números informados é: %d", Soma);
+		*/
+		
+		/*
+		//Funções matematicas
+		double x = 3.0;
+		double y = 4.0;
+		double z = -5.0;
+		double A, B, C;
+		
+		A = Math.sqrt(x);
+		B = Math.sqrt(y);
+		C = Math.sqrt(25.0);
+		System.out.println("Raiz quadrada de " + x + " = " + A);
+		System.out.println("Raiz quadrada de " + y + " = " + B);
+		System.out.println("Raiz quadrada de 25 = " + C);
+		
+		A = Math.pow(x,y);
+		B = Math.pow(x, 2.0);
+		C = Math.pow(5.0, 2.0);
+		System.out.println( x + " elevado a " + y + " = " + A);
+		System.out.println(x + " elevado ao quadrado = " + B);
+		System.out.println("5 elevado ao quadrado = " + C);
+		
+		A = Math.abs(y);
+		B = Math.abs(z);
+		System.out.println("Valor absoluto de " + y + " = " + A);
+		System.out.println("Valor absoluto de " + z + " = " + B);
+		*/
+		
+		/* Entrada de dados do Tipo String
+		Scanner sc = new Scanner(System.in);
+		
+		int x;
+		String s1, s2, s3;
+		
+		x = sc.nextInt();
+		sc.nextLine();
+		s1 = sc.nextLine();//leitura de dados, mas le a linha toda ate que seja apertado <ENTER>
+		s2 = sc.nextLine();
+		s3 = sc.nextLine();
+		
+		System.out.println("Dados Digitados!!");
+		System.out.println(x);
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		
+		sc.close();
+		*/
+		//Entrada de dados de diversos tipos
+		/*Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in); 
+		
+		String x;
+		int y;
+		double alt;
+		char letra;
+		x = sc.next(); //leitura de String mas le apenas ate o primeiro espaço
+		y = sc.nextInt(); //leitura de Int
+		alt = sc.nextDouble(); //leitura de Double ou float
+		letra = sc.next().charAt(0);
+		System.out.println("Vc digitou : " + x + " e o numero digitado foi " + y + "e a sua altura é " + alt+ " a letra de sua escolha foi " + letra);
+		
+		sc.close();
+		*/
+		
+		
+		
+		
+		
+		//Atividade de Impressão de dados em Java
+		/*String produto1 = "Computador";
+		String produto2 = "Mesa de computador";
+		
+		int idade = 30;
+		int code = 5290;
+		char gender = 'F';
+		
+		double price1 = 2100.0;
+		double price2 = 650.50;
+		double medida = 53.234567;
+		
+		System.out.println("Produtos:");
+		System.out.printf("%s, cujo preco e $ %f\n", produto1, price1);
+		System.out.printf("%s, cujo preco e $ %f\n", produto2, price2);
+		System.out.printf("\n");
+		System.out.printf("Record: %d anos, codigo %d e genero: %c", idade, code, gender);
+		System.out.printf("\n\n");
+		System.out.printf("Medida com oito casas decimais : %f\n", medida);
+		System.out.printf("Arredondado (tres casas decimais): %.3f\n", medida);
+		Locale.setDefault(Locale.US);
+		System.out.printf("Medida estadunidense:%.3f ", medida);
+		*/
+	}
+
+}

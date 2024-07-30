@@ -1,0 +1,25 @@
+package Program;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		
+		LocalDate data =  LocalDate.now();
+		LocalDateTime data2 =  LocalDateTime.now();
+		Instant data3 = Instant.now();
+		
+		LocalDate data4 = LocalDate.parse("2024-07-22");
+		
+		System.out.println(data);
+		System.out.println(data2);
+		System.out.println(data3);
+		System.out.println(data4);
+
+	}
+
+}

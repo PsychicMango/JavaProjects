@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="util.Operations"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Entidades.Triangulo"/>
+    <fullyQualifiedTypeName name="Entidades.Retangulo"/>
+    <fullyQualifiedTypeName name="Entidades.Empregado"/>
+    <fullyQualifiedTypeName name="Entidades.Aluno"/>
+    <fullyQualifiedTypeName name="util.Conversor"/>
+    <fullyQualifiedTypeName name="Entidade.Associado"/>
+    <fullyQualifiedTypeName name="Entidades.Produto"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="entidades.Funcionario"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

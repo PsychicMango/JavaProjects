@@ -1,0 +1,19 @@
+package Program;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		
+		LocalDate data =  LocalDate.now();
+		LocalDateTime data2 =  LocalDateTime.now();
+		
+		System.out.println(data);
+		System.out.println(data2);
+
+	}
+
+}

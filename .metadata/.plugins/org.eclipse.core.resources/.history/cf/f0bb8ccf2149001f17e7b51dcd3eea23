@@ -1,0 +1,47 @@
+package Program;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		//DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy"); 
+		LocalDate data =  LocalDate.now();
+		LocalDateTime data2 =  LocalDateTime.now();
+		Instant data3 = Instant.now();
+		
+		LocalDate data4 = LocalDate.parse("2024-07-22");
+		LocalDateTime data5 = LocalDateTime.parse("2022-07-23T15:28:34");
+		Instant data6 = Instant.parse("2022-07-23T15:28:34Z");
+		//LocalDate data5 = LocalDate.parse("22/07/2022",fmt1);
+		System.out.println(data);
+		System.out.println(data2);
+		System.out.println(data3);
+		System.out.println(data4);
+	//	System.out.println(data5);
+		
+		//Formatando data hora para um formato customizado
+		/*
+		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		
+		System.out.println("data formatada = " + data4.format(fmt1));
+		System.out.println("data formatada = " + fmt1.format(data4));
+		System.out.println("data formatada = " + data4.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+*/
+		
+		
+		//Convertendo hora global para local
+		
+		LocalDate r1 = LocalDate.ofInstant(data6, ZoneId.systemDefault());
+		LocalDate r1 = LocalDate.ofInstant(data6, ZoneId.of("Portugal"));
+		System.out.println("R1 = " + r1);
+		
+		}
+
+}

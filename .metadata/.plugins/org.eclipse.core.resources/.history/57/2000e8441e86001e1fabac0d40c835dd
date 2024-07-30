@@ -1,0 +1,53 @@
+package curso_programacao1;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		/*
+		int y = 32;
+		double x = 10.343;
+		
+		Locale.setDefault(Locale.US);
+		
+		System.out.println("VAI TOMA NO CU PIRANHAAAAAAAAAAAAA");
+		System.out.println("BOM DIA CARAIOOOOOO");
+		System.out.println(y);
+		
+		*/
+		
+		//Relembrando como que coda nessa desgraça de JAVA
+		/*
+		String Produto1 = "Computador";
+		String Produto2 = "Mesa De Trabalho";
+		
+		int idade = 30;
+		int codigo = 5290;
+		char genero = 'F';
+		
+		double Preco1 = 2100.0;
+		double Preco2 = 650.50;
+		double Medida = 53.234567;
+		
+		System.out.println("Produtos:");
+		System.out.printf("%s, onde o preço é $ %f\n",Produto1,Preco1);
+		System.out.printf("%s, onde o preço é $ %f\n\n",Produto2,Preco2);
+		System.out.printf("Registro: %d anos, codigo %d e sexo : %c\n\n ", idade,codigo,genero);
+		System.out.printf("Medida com oito digitos de casa decimal: %f\n", Medida);
+		System.out.printf("Medida arrendondada com apenas tres casas decimais: %.3f\n", Medida);
+		Locale.setDefault(Locale.US);
+		System.out.printf("Medida em cambio US: %f",Medida);
+		
+		*/
+		Scanner leitor = new Scanner(System.in);
+		String x;
+		x = leitor.next();
+		System.out.println("Voce digitou" + x);
+		leitor.close();
+		
+	}
+
+}

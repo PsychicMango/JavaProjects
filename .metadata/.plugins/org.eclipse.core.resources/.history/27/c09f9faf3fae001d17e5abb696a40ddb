@@ -1,0 +1,31 @@
+package curso_programacao;
+
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String produto1 = "Computador";
+		String produto2 = "Mesa de computador";
+		
+		int idade = 30;
+		int code = 5290;
+		char gender = 'F';
+		
+		double price1 = 2100.0;
+		double price2 = 650.50;
+		double medida = 53.234567;
+		
+		System.out.println("Produtos:");
+		System.out.printf("%s, cujo preco e $ %f\n", produto1, price1);
+		System.out.printf("%s, cujo preco e $ %f\n", produto2, price2);
+		System.out.printf("\n");
+		System.out.printf("Record: %d anos, codigo %d e genero: %c", idade, code, gender);
+		System.out.printf("\n");
+		System.out.printf("Medida com oito casas decimais : %f\n", medida);
+		System.out.printf("Arredondado (tres casas decimais): %.3f\n", medida);
+		Locale.setDefault(Locale.US);
+		System.out.printf("Medida estadunidense:%.3f ", medida);
+	}
+
+}

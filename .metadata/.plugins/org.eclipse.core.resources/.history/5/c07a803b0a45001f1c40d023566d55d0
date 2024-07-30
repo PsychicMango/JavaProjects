@@ -1,0 +1,17 @@
+package util;
+
+
+public class Conversor {
+
+	public static double converteDolar(double reais, double dolar) {
+		double convertido;
+		reais = reais * dolar;
+		return convertido = reais * 0,06 + reais;
+		
+	}
+		
+		
+
+	}
+
+

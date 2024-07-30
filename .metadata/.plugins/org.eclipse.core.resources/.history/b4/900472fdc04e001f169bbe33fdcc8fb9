@@ -1,0 +1,14 @@
+package Entidades;
+
+import java.util.Date;
+
+public class ContratoHora {
+
+	private Date data;
+	private Double valorPorHora;
+	private Integer horas;
+	
+	public ContratoHora() {
+		
+	}
+}

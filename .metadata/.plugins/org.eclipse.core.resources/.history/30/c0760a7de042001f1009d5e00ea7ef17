@@ -1,0 +1,86 @@
+package Atividades;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Moudulo1 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner leitor = new Scanner(System.in);
+		/*
+		//Exercício 1
+		int num1, num2;
+		
+		num1 = leitor.nextInt();
+		num2 = leitor.nextInt();
+		
+		System.out.printf("SOMA = %d", num1+num2 );
+	*/
+		//Exercicio 2
+		/*
+		double area, raio;
+		raio = leitor.nextDouble();
+		area = Math.round(Math.PI * Math.pow(raio, 2));
+		
+		System.out.printf("A = %f", area);
+		*/
+		
+		//Exercicio 3
+		/*
+		int A, B, C, D;
+		int Diferenca;
+		
+		A = leitor.nextInt();
+		B = leitor.nextInt();
+		C = leitor.nextInt();
+		D = leitor.nextInt();
+		Diferenca = (A * B - C * D);
+		System.out.printf("DIFERENCA = %d", Diferenca);
+		*/
+		
+		//Exercicio 4
+		/*
+		int id, horas;
+		double valorHora,Salario;
+		
+		id = leitor.nextInt();
+		horas = leitor.nextInt();
+		valorHora = leitor.nextDouble();
+		Salario =  horas * valorHora;
+		System.out.println("Number = " + id);
+		System.out.printf("SALARY = %.2f", Salario);
+		*/
+		//Exercicio5
+		/*
+		int idPeca1, qtdPeca1, idPeca2, qtdPeca2;
+		double valorPeca1, valorPeca2;
+		
+		idPeca1 = leitor.nextInt();
+		qtdPeca1 = leitor.nextInt();
+		valorPeca1 = leitor.nextDouble();
+		
+		idPeca2 = leitor.nextInt();
+		qtdPeca2 = leitor.nextInt();
+		valorPeca2 = leitor.nextDouble();
+		
+		System.out.printf("VALOR A PAGAR = %.2f",(qtdPeca1 * valorPeca1) + (qtdPeca2 * valorPeca2));
+		*/
+		//Exercicio 6
+		double A, B, C;
+		
+		A = leitor.nextDouble();
+		B = leitor.nextDouble();
+		C = leitor.nextDouble();
+		
+		System.out.printf("TRIANGULO: %f\n", A * C);
+		System.out.printf("CIRCULO: %f\n", Math.PI * Math.pow(C, 2));
+		System.out.printf("TRAPEZIO: %f\n", (A + B * C)/2);
+		System.out.printf("QUADRADO; %f\n", Math.pow(B, 2));
+		System.out.printf("RETANGULO: %f", A * B);
+		
+		
+		
+	}
+
+}
