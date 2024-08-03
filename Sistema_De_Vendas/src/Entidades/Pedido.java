@@ -1,28 +1,27 @@
 package Entidades;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import Entidades.enums.EstatusPedido;
 
 public class Pedido {
-	private Integer id;
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 	private Date momento;
 	private EstatusPedido status;
+	private Cliente cliente;
+	private List<PedidoItem> pedidoItens = new ArrayList<PedidoItem>();
 	
-	public Pedido(Integer id, Date momento, EstatusPedido status) {
-		this.id = id;
+	public Pedido() {
+		
+	}
+
+	public Pedido(Date momento, EstatusPedido status, Cliente cliente) {
 		this.momento = momento;
 		this.status = status;
-		
-		
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
+		this.cliente = cliente;
 	}
 
 	public Date getMomento() {
@@ -41,9 +40,45 @@ public class Pedido {
 		this.status = status;
 	}
 
-	@Override
-	public String toString() {
-		return "Pedido [id=" + id + ", momento=" + momento + ", status=" + status + "]";
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public void adicionaPedidoItem(PedidoItem pedidoItem) {
+		pedidoItens.add(pedidoItem);
+		
+	}
+	public void removePedidoItem(PedidoItem pedidoItem) {
+		pedidoItens.remove(pedidoItem);
+		
 	}
 	
+	public double total() {
+		double soma = 0.0;
+		for(PedidoItem pi : pedidoItens) {
+			soma += pi.subTotal();
+		}
+		return soma;
+	}
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Momento do pedido: ");
+		sb.append(sdf.format(momento) + "\n");
+		sb.append("Status do Pedido: ");
+		sb.append(status + "\n");
+		sb.append("Cliente: ");
+		sb.append(cliente + "\n");
+		sb.append("Itens do Pedido: ");
+		for(PedidoItem pi : pedidoItens) {
+			sb.append(pi + "\n");
+		}
+		sb.append("Preço total: $");
+		sb.append(String.format("%.2f", total()));
+		return sb.toString();
+	}
 }

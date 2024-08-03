@@ -1,9 +1,0 @@
-package Entidade;
-
-public class Associado {
-
-		private String nome;
-		private int id;
-		private double saldo;
-		
-}

@@ -2,7 +2,7 @@ package Entidades.enums;
 
 public enum EstatusPedido {
 	PAGAMENTO_PENDENTE,
-	PROCESSADO,
+	PROCESSANDO,
 	ENVIADO,
-	ENTREGUE;
+	ENTREGUE
 }
