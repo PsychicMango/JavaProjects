@@ -1,6 +1,6 @@
 package model.exceptions;
 
-public class ExceptionDomain extends Exception {
+public class ExceptionDomain extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 	
 	public ExceptionDomain(String mensagem) {

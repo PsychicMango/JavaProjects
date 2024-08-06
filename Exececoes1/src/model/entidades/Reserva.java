@@ -14,7 +14,7 @@ public class Reserva {
 	private Date checkIn;
 	private Date checkOut;
 	
-	public Reserva(Integer numeroQuarto, Date checkin, Date checkout) throws ExceptionDomain  {
+	public Reserva(Integer numeroQuarto, Date checkin, Date checkout){
 		if (!checkOut.after(checkIn)){
 			throw new ExceptionDomain("Erro na reserva: Data de Check-Out precisa ser informada depois da data de Check-In");
 		}
@@ -44,7 +44,7 @@ public class Reserva {
 		return TimeUnit.DAYS.convert(diferenca, TimeUnit.MILLISECONDS);
 	}
 	
-	public void atualizaData(Date checkIn, Date checkOut)  throws ExceptionDomain{
+	public void atualizaData(Date checkIn, Date checkOut){
 		
 		Date hoje = new Date();
 		if (checkIn.before(hoje) || checkOut.before(hoje)) {

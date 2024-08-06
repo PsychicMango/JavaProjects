@@ -39,6 +39,8 @@ public class Program {
 			
 		}catch(ExceptionDomain e) {
 			System.out.println("Erro na reserva" + e.getMessage());
+		}catch(RuntimeException e) {
+			System.out.println("Erro inesperado");
 		}
 		leitor.close();
 
