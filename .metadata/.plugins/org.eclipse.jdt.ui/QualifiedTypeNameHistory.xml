@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="util.Operations"/>
     <fullyQualifiedTypeName name="Entidades.Triangulo"/>
-    <fullyQualifiedTypeName name="Entidades.Retangulo"/>
     <fullyQualifiedTypeName name="Entidades.Empregado"/>
     <fullyQualifiedTypeName name="Entidades.Aluno"/>
     <fullyQualifiedTypeName name="util.Conversor"/>
@@ -24,16 +23,12 @@
     <fullyQualifiedTypeName name="Entidades.Funcionario"/>
     <fullyQualifiedTypeName name="Entidades.FuncionarioTerceirizado"/>
     <fullyQualifiedTypeName name="java.text.ParseException"/>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="Entidades.Produto"/>
     <fullyQualifiedTypeName name="Entidades.ProdutoUsado"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="Entidades.ProdutoImportado"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="Entidades.ContaBancaria"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="Entidades.ContaPoupança"/>
     <fullyQualifiedTypeName name="Entidades.ContaEmpresarial"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -41,4 +36,17 @@
     <fullyQualifiedTypeName name="java.time.Instant"/>
     <fullyQualifiedTypeName name="java.util.TimeZone"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="Entidades.enums.Cor"/>
+    <fullyQualifiedTypeName name="Entidades.Forma"/>
+    <fullyQualifiedTypeName name="Entidades.Retangulo"/>
+    <fullyQualifiedTypeName name="Entidades.Circulo"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="Entidades.Impostos"/>
+    <fullyQualifiedTypeName name="Entidades.PessoaFisica"/>
+    <fullyQualifiedTypeName name="Entidades.PessoaJuridica"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 </qualifiedTypeNameHistroy>
